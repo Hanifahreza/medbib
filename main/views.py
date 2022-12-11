@@ -36,8 +36,8 @@ def search(request):
     return render(request, "results.html", context=context)
 
 
-def paginate(objects, page_number, doc_per_page=10):
-    paginator = Paginator(objects, doc_per_page)
+def paginate(docs, page_number, doc_per_page=10):
+    paginator = Paginator(docs, doc_per_page)
 
     try:
         page = paginator.page(page_number)
@@ -93,6 +93,9 @@ def get_title_content(file, col_id, doc_id):
     if content == '':
         content = title
         title = f'Document {doc_id[:-4]} - Collection {col_id}'
+    content = content.capitalize()
+    if title[-1] == '.':
+        title = title[:-1]
     return title, content
 
 def trim_title(title):

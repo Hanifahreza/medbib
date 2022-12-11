@@ -4,9 +4,11 @@
 } */
 
 #file-view {
-  font-family: Arial, sans-serif;
-  margin: 80px 150px 0px 150px;
-  position:absolute
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  position:absolute;
+  text-align: left;
+  margin-top: 80px;
+  margin-left: 50px;
 }
 
 #file-view h2 {
@@ -14,13 +16,24 @@
   line-height: 25px;
   font-weight: normal;
   color: green;
+  font-size: 35px;
+  margin-bottom: -10px;
+}
+
+#file-view h4 {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: -5px;
+  width: 800px;
 }
 
 #file-view p {
-  width: 600px;
-  font-size: 18px;
+  width: 800px;
+  font-size: 23px;
   line-height: 30px;
-  margin-top: 0px;
+  margin-top: 20px;
   color: #546349;
 }
 
