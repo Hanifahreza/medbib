@@ -1,4 +1,4 @@
-# medbib
+# Medicinae Bibliotheca - medbib
 
 ## Deployed Site
 medbib (dot) up (dot) railway (dot) app
